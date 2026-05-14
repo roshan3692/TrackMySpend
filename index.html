@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrackMySpend</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>TrackMySpend</h1>
+        <p class="subtitle">Simple Expense Tracker</p>
+
+        <div class="expense-form">
+            <input type="text" id="category" placeholder="Enter Category">
+            <input type="number" id="amount" placeholder="Enter Amount">
+            <button onclick="addExpense()">Add Expense</button>
+        </div>
+
+        <div class="summary">
+            <h2>Total Expense: ₹<span id="total">0</span></h2>
+        </div>
+
+        <ul id="expense-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
